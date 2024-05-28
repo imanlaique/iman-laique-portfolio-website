@@ -6,19 +6,36 @@ Secondary Color (white): #ffffff;
 */
 body {
     background-color: #fafafa;
-    font-family: "Arimo", sans-serif; /* Use Arimo font if available, otherwise use a sans-serif font */
+    font-family: "Arimo", sans-serif;
+    /* Use Arimo font if available, otherwise use a sans-serif font */
+}
+h1, h2, h3, h4 {
+    line-height: 1.5;
 }
 
 h1 {
     font-size: 24px;
-    line-height: 1.5x;
+    font-weight: 600;
+    font-style: bold;
+}
+h2 {
+    font-size: 22px;
     font-weight: 500;
     font-style: bold;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: medium;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: medium;
 }
 
 p {
     font-size: 16px;
-    line-height: 1.5x;
-    font-weight: 500;
-    font-style: medium;
+    font-weight: 400;
+    font-style: light;
 }
