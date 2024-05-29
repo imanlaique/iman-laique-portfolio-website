@@ -8,26 +8,35 @@ body {
     background-color: #fafafa;
     font-family: "Arimo", sans-serif;
     font-size: 16px;
-    font-style: normal
+    font-style: normal;
+    line-height: 1.6;
+    color: black;
     /* Use Arimo font if available, otherwise use a sans-serif font */
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4,
+p {
     line-height: 1.5;
-    font-style: normal;
 }
 
 h1 {
     font-size: 1.5em;
     font-weight: 600;
 }
+
 h2 {
     font-size: 1.375em;
     font-weight: 500;
 }
+
 h3 {
     font-size: 1.25em;
     font-weight: 500;
 }
+
 h4 {
     font-size: 1.125em;
     font-weight: 400;
@@ -41,4 +50,43 @@ p {
 
 img {
     width: 100%;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover,
+a:focus {
+    color: #3966DA;
+    text-decoration: underline;
+}
+
+a:active {
+    outline: 2px solid blue;
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
+.primary-button:active {
+    background-color: #004085;
 }
