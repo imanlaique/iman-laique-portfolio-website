@@ -71,22 +71,37 @@ a:active {
     outline: 2px solid blue;
 }
 
-.primary-button {
+.button {
     display: inline-block;
     background-color: black;
-    color: white;
+    color: #ffffff;
     font-weight: 400;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 16px;
     text-align: center;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    border-radius: 3px;
+    border-bottom: 2px solid;
+    transition: 0.2s opacity;
 }
 
-.primary-button:hover {
-    background-color: #0056b3;
+.button:hover {
+    background-color: darkgray;
+    opacity: 0.8;
+    text-decoration: none;
 }
 
-.primary-button:active {
-    background-color: #004085;
+.button:active {
+    background-color: black;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid black;
+  }
+
+.button.contact:hover {
+    background-color: black;
+    color: #ffffff;
 }
