@@ -126,3 +126,7 @@ footer {
     margin: 10px;
     border-bottom: 3px solid #fafafa;
 }
+
+.header.container {
+    max-width: 1200px;
+}
