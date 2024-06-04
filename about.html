@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container"> <!-- CONTAINER -->
-            <h1>Iman Laique</h1>
+            <h1 class="logo">Iman Laique</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -30,7 +30,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="about">
         <div>
             <div class="container"><!-- CONTAINER -->
                 <h1>About</h1>
@@ -38,11 +38,11 @@
         </div>
         <div>
             <div class="container"><!-- CONTAINER -->
-                <picture>
+                <picture id="headshot">
                     <source media="(min-width:768px)" srcset="img/portoflio/about/about_me_photo@2x.jpg">
                     <img src="img/portoflio/about/about_me_photo@1x.jpg" alt="Headshot">
                 </picture>
-                <div class="row"><!-- ROW -->
+                <div id="story" class="row"><!-- ROW -->
                     <div class="column"><!-- COLUMN -->
                         <h2>My Story</h2>
                         <p>Hi my name is Iman, I’m a UX Designer based in the San Francisco Bay Area. I have an
@@ -61,7 +61,7 @@
                         <a href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
                             class="button" target="_blank">My Resume</a>
                     </div>
-                    <div class="column"><!-- COLUMN -->
+                    <div id="skills" class="column"><!-- COLUMN -->
                         <h2>Skills [&] Tools</h2>
                         <div class="row"><!-- ROW -->
                             <div class="column"><!-- COLUMN -->
@@ -91,10 +91,9 @@
                 </div>
             </div>
         </div>
-
     </main>
 
-    <footer id="contact">
+    <footer id="contact" class="social">
         <div class="container"><!-- CONTAINER -->
             <h2>Get in Touch</h2>
             <p>If you like my work and want to discuss opportunities, please contact me.</p>
