@@ -112,7 +112,6 @@ a:active {
 header {
     background-color: #fafafa;
     padding: 10px 5px 15px 5px;
-    margin: 10px;
     border-bottom: 3px solid #fafafa;
     position: relative;
     width: 100%;
@@ -132,6 +131,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
 }
 
 .header.container {
@@ -141,33 +141,25 @@ main {
     padding: 0 40px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 /* Row styling */
 .row {
-    display: flex;
+    display: flex; 
     align-items: center;
     margin: 25px 0;
     margin-bottom: 40px;
 }
 
 /* Column styling */
-.column {
-    flex: 1;
-}
 
 /* Picture styling */
 .column.picture {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-right: 20px
 }
-
-.column.content {
-    padding-left: 20px;
-}
-
 
 #hero {
     background-color: #fafafa;
@@ -183,7 +175,6 @@ main {
 #hero span {
     display: inline-block;
     margin: 0 auto;
-    padding: 0 100px;
 }
 
 /* Logo styling */
@@ -193,12 +184,17 @@ main {
 }
 
 /* Navigation styling */
+nav {
+    float:right; 
+    margin-top: 25px;
+}
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0;
     padding: 0;
+
 }
 
 nav ul li {
@@ -214,7 +210,6 @@ nav ul li a {
     color: black;
     font-size: 1em;
     font-weight: 400;
-    margin-top: -30px;
 }
 
 /* About styling */
@@ -235,18 +230,83 @@ footer {
     padding: 10px 5px 15px 5px;
     margin: 10px;
     border-bottom: 3px solid #fafafa;
+    text-align: center;
 }
 
 .social {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .social a {
     display: inline-block;
-    margin: 0 20px ;
+    margin: 0 10px ;
 }
 
-.social svg {
-    width: 50px;
+.social img {
+    width: 30px;
     height: auto
+}
+[class*="col-"] {
+    float: left;
+}
+.row::after {
+    content: "";
+    clear:both;
+    display: table;
+}
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+
+.col-vert-center {
+    display: flex;
+    vertical-align: middle;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    .logo {
+        float: left;
+    }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
 }
