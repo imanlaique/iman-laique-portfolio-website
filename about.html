@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="about">
     <header>
         <div class="container"> <!-- CONTAINER -->
             <h1 class="logo">Iman Laique</h1>
@@ -30,15 +30,15 @@
         </div>
     </header>
 
-    <main id="about">
+    <main>
         <div class="container"><!-- CONTAINER -->
             <h1>About</h1>
-            <div class="content">
-                <picture id="headshot">
+            <div class="content"><!-- ROW -->
+                <picture id="headshot" class="column col-md-6 col-lg-7"><!-- COLUMN -->
                     <source media="(min-width:768px)" srcset="img/portoflio/about/about_me_photo@2x.jpg">
                     <img src="img/portoflio/about/about_me_photo@1x.jpg" alt="Headshot">
                 </picture>
-                <div id="story">
+                <div id="story" class="column col-md-6 col-lg-5"><!-- COLUMN -->
                     <h2>My Story</h2>
                     <p>Hi my name is Iman, I’m a UX Designer based in the San Francisco Bay Area. I have an
                         undergraduate background in human behavior subjects including Sociology and Psychology.
@@ -56,10 +56,10 @@
                         class="button" target="_blank">My Resume</a>
                 </div>
             </div>
-            <div id="skills">
+            <div id="skills"><!-- ROW -->
                 <h2>Skills [&] Tools</h2>
-                <div class="container">
-                    <div class="column">
+                <div class="container"><!-- CONTAINER -->
+                    <div class="column col-md-6 col-lg-7"><!-- COLUMN -->
                         <h3>Relevant Skills</h3>
                         <ul>
                             <li>User Research</li>
@@ -70,7 +70,7 @@
                             <li>Lo-fi [&] Hi-fi Prototyping Usability Testing</li>
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="column col-md-6 col-lg-5"><!-- COLUMN -->
                         <h3>Tools I Use</h3>
                         <ul>
                             <li>Figma</li>
