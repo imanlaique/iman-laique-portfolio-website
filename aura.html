@@ -12,23 +12,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d0e9fd603.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container"> <!-- CONTAINER -->
-            <a href="index.html" class="logo">Iman Laique</a> 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
-                            target="_blank">Resume</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<header>
+		<div class="container"> <!-- CONTAINER -->
+			<div class="navtoggle" id="myNavtoggle">
+				<a href="index.html" class="logo">Iman Laique</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
+								target="_blank">Resume</a></li>
+						<li> <a href="about.html">About</a></li>
+						<li> <a href="#contact" onclick="menuToggle()">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+									class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
     <main>
         <section class="container"><!-- CONTAINER -->
@@ -107,11 +112,11 @@
         </section>
         <section class="background-blue">
             <div class="container"><!-- CONTAINER -->
-                <h2 class="center-text">PRODUCT FEATURES</h2>
+                <h2 class="center-text light-text">PRODUCT FEATURES</h2>
             </div>
             <div class="container thin-container"><!-- CONTAINER -->
                 <div class="row"><!-- ROW -->
-                    <div class="col-md-3"><!-- COLUMN -->
+                    <div class="col-md-5"><!-- COLUMN -->
                         <picture>
                             <source media="(min-width:768px)"
                                 srcset="img/portoflio/projects/aura/product_feature_specialists@2x.png">
@@ -119,7 +124,7 @@
                                 alt="appointment-wireframe">
                         </picture>
                     </div>
-                    <div class="col-md-9"><!-- COLUMN -->
+                    <div class="col-md-7 light-text"><!-- COLUMN -->
                         <h3>Seamless Access to Book Appointments</h3>
                         <p>Choose from an array of licensed professionals with unique specialties to guide you through
                             your
@@ -127,7 +132,7 @@
                     </div>
                 </div>
                 <div class="row"><!-- ROW -->
-                    <div class="column"><!-- COLUMN -->
+                    <div class="col-md-5"><!-- COLUMN -->
                         <picture>
                             <source media="(min-width:768px)"
                                 srcset="img/portoflio/projects/aura/product_feature_activity@2x.png">
@@ -135,7 +140,7 @@
                                 alt="resources-wireframe">
                         </picture>
                     </div>
-                    <div class="column"><!-- COLUMN -->
+                    <div class="col-md-7 light-text"><!-- COLUMN -->
                         <h3>Choose from List of Resources</h3>
                         <p>Aura offers various activities and resources that you can access to manage symptoms of
                             anxiety,
@@ -143,7 +148,7 @@
                     </div>
                 </div>
                 <div class="row"><!-- ROW -->
-                    <div class="column"><!-- COLUMN -->
+                    <div class="col-md-5"><!-- COLUMN -->
                         <picture>
                             <source media="(min-width:768px)"
                                 srcset="img/portoflio/projects/aura/product_feature_messages@2x.png">
@@ -151,7 +156,7 @@
                                 alt="messages-wireframe">
                         </picture>
                     </div>
-                    <div class="column"><!-- COLUMN -->
+                    <div class="col-md-7 light-text"><!-- COLUMN -->
                         <h3>Message Mental Health Professionals</h3>
                         <p>To ensure users are able to have regular communication with providers, they can directly
                             message
@@ -185,10 +190,10 @@
                         strike a balance between stakeholder preferences and user needs.</p>
                 </div>
                 <div>
-                    <h3>Executive Summary</h3>
+                    <h3 class="center-text">Executive Summary</h3>
                     <div class="row row-align-top"><!-- ROW -->
                         <div class="column col-md-3"><!-- COLUMN -->
-                            <h4>Target Audience</h4>
+                            <h4 class="center-text">Target Audience</h4>
                             <picture>
                                 <source media="(min-width:768px)"
                                     srcset="img/portoflio/projects/aura/aura_target_audience@2x.png">
@@ -199,7 +204,7 @@
                             </p>
                         </div>
                         <div class="column col-md-3"><!-- COLUMN -->
-                            <h4>Risk [&] Opportunity</h4>
+                            <h4 class="center-text">Risk [&] Opportunity</h4>
                             <picture>
                                 <source media="(min-width:768px)" srcset="img/portoflio/projects/aura/aura_risk@2x.png">
                                 <img src="img/portoflio/projects/aura/aura_risk@1x.png" alt="aura-risk">
@@ -209,7 +214,7 @@
                                 resources all accessed through a healthcare provider.</p>
                         </div>
                         <div class="column col-md-3"><!-- COLUMN -->
-                            <h4>Competition</h4>
+                            <h4 class="center-text">Competition</h4>
                             <picture>
                                 <source media="(min-width:768px)"
                                     srcset="img/portoflio/projects/aura/aura_competition@2x.png">
@@ -220,7 +225,7 @@
                                 people prefer.</p>
                         </div>
                         <div class="column col-md-3"><!-- COLUMN -->
-                            <h4>Conclusions</h4>
+                            <h4 class="center-text">Conclusions</h4>
                             <picture>
                                 <source media="(min-width:768px)"
                                     srcset="img/portoflio/projects/aura/aura_conclusions@2x.png">
@@ -489,6 +494,7 @@
             <div>© Iman Laique 2024</div>
         </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

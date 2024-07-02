@@ -12,23 +12,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d0e9fd603.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container"> <!-- CONTAINER -->
-            <a href="index.html" class="logo">Iman Laique</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
-                            target="_blank">Resume</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<header>
+		<div class="container"> <!-- CONTAINER -->
+			<div class="navtoggle" id="myNavtoggle">
+				<a href="index.html" class="logo">Iman Laique</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
+								target="_blank">Resume</a></li>
+						<li> <a href="about.html">About</a></li>
+						<li> <a href="#contact" onclick="menuToggle()">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+									class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
     <main>
         <section class="container"><!-- CONTAINER -->
@@ -470,6 +475,7 @@
             <div>© Iman Laique 2024</div>
         </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

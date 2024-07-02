@@ -112,7 +112,7 @@ a:active {
 /* Header styling */
 header {
     background-color: #fafafa;
-    padding: 10px 5px 15px 5px;
+    padding: 10px 0 4px;;
     border-bottom: 3px solid #fafafa;
     position: relative;
     width: 100%;
@@ -122,10 +122,16 @@ header {
 main {
     background-color: #fafafa;
     border-bottom: 3px solid #fafafa;
+    padding-top: 56px;
 }
 
 .background-blue {
     background: #29274e;
+    padding-top: 30px;
+}
+
+.light-text {
+    color: #ffffff;
 }
 
 /* Layout styling */
@@ -192,7 +198,7 @@ header .container {
 .logo {
     font-size: 1.5em;
     font-weight: 600;
-    width: 100%;
+    max-width: 150px;
 }
 
 /* Navigation styling */
@@ -209,12 +215,18 @@ nav ul {
 
 }
 
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
 nav ul li {
     margin-right: 20px;
 }
 
 nav ul li:last-child {
     margin-right: 0;
+    padding: 0 0 10px;
 }
 
 nav ul li a {
@@ -222,6 +234,32 @@ nav ul li a {
     color: black;
     font-size: 1em;
     font-weight: 400;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
 }
 
 /* About styling */
@@ -348,12 +386,21 @@ Medium devices (640px and larger)
       margin-top: 4px;
     }
 
+    nav > ul {
+        margin: 1em 0;
+      }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
     main {
         font-size: 18px;
     }
 
     .logo {
         width: auto;
+        min-width: 641px;
         flex: 1;
     }
 
