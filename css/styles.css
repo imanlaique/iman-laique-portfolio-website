@@ -122,7 +122,6 @@ header {
 main {
     background-color: #fafafa;
     border-bottom: 3px solid #fafafa;
-    padding-top: 56px;
 }
 
 .background-blue {
@@ -152,9 +151,9 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
     overflow: hidden;
 }
 
@@ -187,11 +186,17 @@ header .container {
 
 #hero h1 {
     margin: 0;
+    padding-top: 10px;
 }
 
 #hero span {
     display: inline-block;
     margin: 0 auto;
+}
+
+#hero svg {
+   margin: 20px;
+   width: auto;
 }
 
 /* Logo styling */
@@ -203,13 +208,12 @@ header .container {
 
 /* Navigation styling */
 nav {
-    float:right; 
     margin-top: 10px;
 }
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center; */
     margin: 0;
     padding: 0;
 
@@ -219,10 +223,6 @@ nav > ul {
     list-style-type: none;
     padding: 0;
   }
-
-nav ul li {
-    margin-right: 20px;
-}
 
 nav ul li:last-child {
     margin-right: 0;
@@ -242,20 +242,30 @@ nav ul li a {
 
 .navtoggle, .navtoggle.responsive {
     position: relative;
+    width: 100%;
 }
 
 .navtoggle li .icon {
     position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
     right: 0;
     top: 2px;
     font-size: 20px;
     padding-right: 0;
 }
 
+.navtoggle.responsive li .icon {
+    position: absolute;
+    top: 2px;
+}
+
 .navtoggle.responsive li  {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255,127,80,0.5);
+    border-top: 1px solid rgba(103, 103, 103, 0.5);
+    text-align: center;
 }
 
 .navtoggle.responsive nav {
@@ -388,20 +398,41 @@ Medium devices (640px and larger)
 
     nav > ul {
         margin: 1em 0;
-      }
+        display: flex;
+    }
+
+    header .navtoggle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .navtoggle li:not(:last-child) {
         display: inline-block;
-      }
+        margin-left: 15px;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .navtoggle.responsive li  {
+        padding: 0;
+        border-top: none;
+    }
+    
+    .navtoggle.responsive nav {
+        padding: 0;
+    }
 
     main {
         font-size: 18px;
     }
 
     .logo {
-        width: auto;
-        min-width: 641px;
         flex: 1;
+        width: 100%;
     }
 
     #about h1 {
