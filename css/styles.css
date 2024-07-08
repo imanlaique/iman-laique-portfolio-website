@@ -129,6 +129,11 @@ main {
     padding-top: 30px;
 }
 
+.background-green {
+    background: #16560B;
+    padding-top: 30px;
+}
+
 .light-text {
     color: #ffffff;
 }
@@ -166,6 +171,10 @@ header .container {
     align-items: center;
     margin: 25px 0;
     margin-bottom: 40px;
+}
+
+.row-wrap {
+    flex-wrap: wrap;
 }
 
 /* Column styling */
@@ -227,6 +236,7 @@ nav > ul {
 nav ul li:last-child {
     margin-right: 0;
     padding: 0 0 10px;
+    text-align: center;
 }
 
 nav ul li a {
@@ -305,7 +315,6 @@ footer {
     height: auto
 }
 [class*="col-"] {
-    float: left;
     padding: 10px;
 }
 .row::after {
@@ -332,6 +341,10 @@ footer {
 .col-vert-center {
     display: flex;
     vertical-align: middle;
+}
+
+.col-centered {
+    justify-content: center;
 }
 
 .m-b-0 {
@@ -380,6 +393,22 @@ footer {
 
 .cloud-left {
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.target-audience img {
+    max-width: 60px;
+}
+
+.risk-opportunity img {
+    max-width: 163px;
+}
+
+.competition img {
+    max-width: 109px;
+}
+
+.conclusions img {
+    max-width: 102px;
 }
 
 /* ==============================
