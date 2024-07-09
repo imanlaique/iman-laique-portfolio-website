@@ -138,6 +138,10 @@ main {
     color: #ffffff;
 }
 
+.title-padding {
+    padding-top: 30px;
+}
+
 /* Layout styling */
 .container {
     width: 100%;
@@ -177,6 +181,11 @@ header .container {
     flex-wrap: wrap;
 }
 
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Column styling */
 
 /* Picture styling */
@@ -184,6 +193,10 @@ header .container {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.picture-padding {
+    padding: 10px;
 }
 
 #hero {
@@ -344,6 +357,7 @@ footer {
 }
 
 .col-centered {
+    display: flex;
     justify-content: center;
 }
 
@@ -409,6 +423,25 @@ footer {
 
 .conclusions img {
     max-width: 102px;
+}
+
+.smaller-image {
+    max-width: 100%; 
+    display: block; /* Ensure it behaves as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center
+}
+
+.key-flow-image {
+    text-align: center;
+}
+
+.key-flow-image img {
+    max-width: calc(100% - 50px); /* Ensure image does not exceed its container width */
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    padding: 30px ;
 }
 
 /* ==============================
@@ -497,6 +530,11 @@ Medium devices (640px and larger)
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
 }
+
+.smaller-image {
+    max-width: 70%; 
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
