@@ -138,6 +138,10 @@ main {
     color: #ffffff;
 }
 
+.gray-text {
+    color: #6D6B6B;
+}
+
 .title-padding {
     padding-top: 30px;
 }
@@ -432,6 +436,13 @@ footer {
     text-align: center
 }
 
+.testing-image {
+    max-width: 100%; 
+    display: block; /* Ensure it behaves as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center
+}
+
 .key-flow-image {
     text-align: center;
 }
@@ -442,6 +453,13 @@ footer {
     display: block;
     margin: 0 auto; 
     padding: 30px ;
+}
+
+.flow-image {
+    max-width: 50%; /* Adjust this value to make the images smaller or larger */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 /* ==============================
@@ -517,6 +535,10 @@ Medium devices (640px and larger)
         align-items: start;
     }
 
+    .row-align-bottom {
+        align-items: end;
+    }
+
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
     .col-md-3 {width: 25%;}
@@ -533,6 +555,14 @@ Medium devices (640px and larger)
 
 .smaller-image {
     max-width: 70%; 
+}
+
+.testing-image {
+    max-width: 50%;
+}
+
+.iterations-image {
+
 }
 
 /* ==============================
