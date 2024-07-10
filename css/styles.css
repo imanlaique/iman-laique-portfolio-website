@@ -146,6 +146,10 @@ main {
     padding-top: 30px;
 }
 
+.remove-padding {
+    padding: 0;
+}
+
 /* Layout styling */
 .container {
     width: 100%;
@@ -172,6 +176,10 @@ header .container {
 
 .center-text {
     text-align: center;
+}
+
+.left-text {
+    text-align: left;
 }
 
 /* Row styling */
@@ -456,12 +464,11 @@ footer {
 }
 
 .flow-image {
-    max-width: 50%; /* Adjust this value to make the images smaller or larger */
+    max-width: 60%; /* Adjust this value to make the images smaller or larger */
     height: auto;
     display: block;
     margin: 0 auto; /* Center the image horizontally */
 }
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -554,15 +561,11 @@ Medium devices (640px and larger)
 }
 
 .smaller-image {
-    max-width: 70%; 
+    max-width: 70%;
 }
 
 .testing-image {
     max-width: 50%;
-}
-
-.iterations-image {
-
 }
 
 /* ==============================
