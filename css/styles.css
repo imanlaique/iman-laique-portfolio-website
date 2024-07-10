@@ -159,6 +159,10 @@ main {
     padding: 0 15px;
 }
 
+.container-svg {
+    height: 50%;
+}
+
 .thin-container {
     max-width: 700px;
 }
@@ -213,14 +217,14 @@ header .container {
 
 #hero {
     background-color: #fafafa;
-    text-align: center;
+    text-align:center;
     padding: 20px 0;
     font-size: 1.125em;
 }
 
 #hero h1 {
     margin: 0;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #hero span {
@@ -229,7 +233,7 @@ header .container {
 }
 
 #hero svg {
-   margin: 20px;
+   margin: 0;
    width: auto;
 }
 
