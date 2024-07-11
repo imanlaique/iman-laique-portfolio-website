@@ -218,7 +218,7 @@ header .container {
 #hero {
     background-color: #fafafa;
     text-align:center;
-    padding: 20px 0;
+    padding: 15px;
     font-size: 1.125em;
 }
 
@@ -235,6 +235,7 @@ header .container {
 #hero svg {
    margin: 0;
    width: auto;
+   max-width: 800px;
 }
 
 /* Logo styling */
@@ -448,6 +449,13 @@ footer {
     text-align: center
 }
 
+.smallest-image {
+    max-width: 100%; 
+    display: block; /* Ensure it behaves as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center
+}
+
 .testing-image {
     max-width: 100%; 
     display: block; /* Ensure it behaves as a block-level element */
@@ -468,7 +476,7 @@ footer {
 }
 
 .flow-image {
-    max-width: 60%; /* Adjust this value to make the images smaller or larger */
+    max-width: 70%; /* Adjust this value to make the images smaller or larger */
     height: auto;
     display: block;
     margin: 0 auto; /* Center the image horizontally */
@@ -537,6 +545,10 @@ Medium devices (640px and larger)
         display: flex;
     }
 
+    .row-space {
+        gap: 30px;
+    }
+
     .row-reverse {
         flex-direction: row-reverse;
         margin: 0 -10px;
@@ -562,7 +574,7 @@ Medium devices (640px and larger)
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
-}
+
 
 .smaller-image {
     max-width: 70%;
@@ -570,6 +582,25 @@ Medium devices (640px and larger)
 
 .testing-image {
     max-width: 50%;
+}
+
+.smallest-image {
+    max-width: 60%; 
+}
+
+.user-flow-image-right {
+    width: 375px;
+}
+
+.user-flow-image-left {
+width: 312px;
+}
+
+.future-directions-image {
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
 }
 
 /* ==============================
