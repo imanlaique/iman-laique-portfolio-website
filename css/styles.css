@@ -217,7 +217,7 @@ header .container {
 
 #hero {
     background-color: #fafafa;
-    text-align:center;
+    text-align:left;
     padding: 15px;
     font-size: 1.125em;
 }
@@ -235,7 +235,6 @@ header .container {
 #hero svg {
    margin: 0;
    width: auto;
-   max-width: 800px;
 }
 
 /* Logo styling */
@@ -243,6 +242,11 @@ header .container {
     font-size: 1.5em;
     font-weight: 600;
     max-width: 150px;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: black;
 }
 
 /* Navigation styling */
