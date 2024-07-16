@@ -1,116 +1,166 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iman Laique Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/e03cde9473.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Iman Laique Portfolio</title>
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-		rel="stylesheet">
-	<script src="https://kit.fontawesome.com/e03cde9473.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-	<header>
-		<div class="container"> <!-- CONTAINER -->
-			<div class="navtoggle" id="myNavtoggle">
-				<a href="index.html" class="logo">Iman Laique</a>
-				<nav>
-					<ul>
-						<li><a href="https://drive.google.com/file/d/1Odb_JFLzot0dg60hiKHJO3FOx7afUf-c/view?usp=sharing"
-								target="_blank">Resume</a></li>
-						<li> <a href="about.html">About</a></li>
-						<li> <a href="contact.html">Contact</a></li>
-						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-									class="fas fa-bars"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
+  <body>
+    <header>
+      <div class="container">
+        <!-- CONTAINER -->
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo">Iman Laique</a>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1Odb_JFLzot0dg60hiKHJO3FOx7afUf-c/view?usp=sharing"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main>
-        <div class="container"><!-- CONTAINER -->
-            <div class="row m-b-0">
-                <div class="col-md-12">
-                <h1>About</h1>
-                </div>
-            </div>
-            <div class="row content row-reverse"><!-- ROW -->
-                <picture id="headshot" class="column col-md-6 col-lg-7"><!-- COLUMN -->
-                    <source media="(min-width:768px)" srcset="img/portoflio/about/about_me_photo@2x.jpg">
-                    <img src="img/portoflio/about/about_me_photo@1x.jpg" alt="Headshot">
-                </picture>
-                <div id="story" class="column col-md-6 col-lg-5"><!-- COLUMN -->
-                    <h2>My Story</h2>
-                    <p>Hi my name is Iman, I’m a UX Designer based in the San Francisco Bay Area. I have an
-                        undergraduate background in human behavior subjects including Sociology and Psychology.
-                        These subjects have given me the unique ability to empathize with people from all walks of
-                        life and generate design solutions that center individual user and community experiences.
-                    </p>
-                    <p>However, my design journey began in high school as part of a Media Arts Program where I was
-                        first introduced to video, animation, and graphic design. Here I learned the art of
-                        storytelling which I carried into my college experiences. I became enthralled with designing
-                        products and experiences that truly represented people. Design is more than aesthetics, it
-                        is a powerful and creative way to engage users and enhance their lives.</p>
-                    <p>My interests blended with my proficiency in industry tools like Figma, Sketch, Miro, etc.,
-                        allow me to create beautiful designs that resonate with people.</p>
-                    <a href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
-                        class="button" target="_blank">My Resume</a>
-                </div>
-            </div>
-            <div id="skills">
-                <h2>Skills [&] Tools</h2>
-                <div class="row"><!-- row -->
-                    <div class="column col-md-6 col-lg-7"><!-- COLUMN -->
-                        <h3>Relevant Skills</h3>
-                        <ul>
-                            <li>User Research</li>
-                            <li>Journey Mapping</li>
-                            <li>User Personas</li>
-                            <li>Storytelling</li>
-                            <li>Information Architecture Wireframing</li>
-                            <li>Lo-fi [&] Hi-fi Prototyping Usability Testing</li>
-                        </ul>
-                    </div>
-                    <div class="column col-md-6 col-lg-5"><!-- COLUMN -->
-                        <h3>Tools I Use</h3>
-                        <ul>
-                            <li>Figma</li>
-                            <li>Sketch</li>
-                            <li>Miro</li>
-                            <li>Adobe (InDesign, Lightroom, Photoshop)</li>
-                            <li>Canva</li>
-                            <li>Shopify</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <!-- CONTAINER -->
+        <div class="row m-b-0">
+          <div class="col-md-12">
+            <h1>About</h1>
+          </div>
         </div>
+        <div class="row content row-reverse">
+          <!-- ROW -->
+          <picture id="headshot" class="column col-md-6 col-lg-7"
+            ><!-- COLUMN -->
+            <source
+              media="(min-width:768px)"
+              srcset="img/portoflio/about/about_me_photo@2x.jpg"
+            >
+            <img
+              src="img/portoflio/about/about_me_photo@1x.jpg"
+              alt="Headshot"
+            >
+          </picture>
+          <div id="story" class="column col-md-6 col-lg-5">
+            <!-- COLUMN -->
+            <h2>My Story</h2>
+            <p>
+              Hi my name is Iman, I’m a UX Designer based in the San Francisco
+              Bay Area. I have an undergraduate background in human behavior
+              subjects including Sociology and Psychology. These subjects have
+              given me the unique ability to empathize with people from all
+              walks of life and generate design solutions that center individual
+              user and community experiences.
+            </p>
+            <p>
+              However, my design journey began in high school as part of a Media
+              Arts Program where I was first introduced to video, animation, and
+              graphic design. Here I learned the art of storytelling which I
+              carried into my college experiences. I became enthralled with
+              designing products and experiences that truly represented people.
+              Design is more than aesthetics, it is a powerful and creative way
+              to engage users and enhance their lives.
+            </p>
+            <p>
+              My interests blended with my proficiency in industry tools like
+              Figma, Sketch, Miro, etc., allow me to create beautiful designs
+              that resonate with people.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/10Vgr3kTZs4Eh-vzCQj8B-sqcf1dMb3iS/view?usp=sharing"
+              class="button"
+              target="_blank"
+              >My Resume</a
+            >
+          </div>
+        </div>
+        <div id="skills">
+          <h2>Skills [&] Tools</h2>
+          <div class="row">
+            <!-- row -->
+            <div class="column col-md-6 col-lg-7">
+              <!-- COLUMN -->
+              <h3>Relevant Skills</h3>
+              <ul>
+                <li>User Research</li>
+                <li>Journey Mapping</li>
+                <li>User Personas</li>
+                <li>Storytelling</li>
+                <li>Information Architecture Wireframing</li>
+                <li>Lo-fi [&] Hi-fi Prototyping Usability Testing</li>
+              </ul>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+              <!-- COLUMN -->
+              <h3>Tools I Use</h3>
+              <ul>
+                <li>Figma</li>
+                <li>Sketch</li>
+                <li>Miro</li>
+                <li>Adobe (InDesign, Lightroom, Photoshop)</li>
+                <li>Canva</li>
+                <li>Shopify</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer id="contact">
-        <div class="container"><!-- CONTAINER -->
-            <h2>Get in Touch</h2>
-            <p>If you like my work and want to discuss opportunities, please contact me.</p>
-            <div class="social">
-                <a href="mailto:iman.laique@gmail.com" class="button contact">
-                    <img src="img/portoflio/about/email_icon.svg" alt="Email">
-                </a>
-                <a href="https://www.linkedin.com/in/iman-laique/" class="button contact">
-                    <img src="img/portoflio/about/linkedin_icon.svg" alt="LinkedIn">
-                </a>
-            </div>
-            <div>© Iman Laique 2024</div>
+      <div class="container">
+        <!-- CONTAINER -->
+        <h2>Get in Touch</h2>
+        <p>
+          If you like my work and want to discuss opportunities, please contact
+          me.
+        </p>
+        <div class="social">
+          <a href="mailto:iman.laique@gmail.com" class="button contact">
+            <img src="img/portoflio/about/email_icon.svg" alt="Email">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/iman-laique/"
+            class="button contact"
+          >
+            <img src="img/portoflio/about/linkedin_icon.svg" alt="LinkedIn">
+          </a>
         </div>
+        <div>© Iman Laique 2024</div>
+      </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
